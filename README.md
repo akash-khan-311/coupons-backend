@@ -5,32 +5,31 @@ This project supports creating, applying, deleting, and generating reports for c
 
 ## Features
 
-- User authentication:
-  - Register
-  - Login
-  - JWT-based access & refresh tokens
-- User roles: `user`, `admin`,
-- Expense management:
-  - Add new expense
-  - Prevent duplicate titles per user
-  - Filter by category
-  - Sort by date
-- Middleware for protected routes
-- Validation using Zod
-- Password hashing with bcrypt
+- Create new coupons with:
+  - Code
+  - Discount percentage
+  - Expiry date
+  - Maximum usage limit
+- Fetch all active coupons
+- Apply a coupon with validation:
+  - Must exist
+  - Not expired
+  - Must have remaining usage
+- Delete a coupon (soft delete)
+- Generate coupon usage reports:
+  - Total used
+  - Remaining usage
+  - Expired status
 
 ---
 
 ## Tech Stack
 
-- Node.js
-- Express
-- TypeScript
-- MongoDB & Mongoose
-- Zod for validation
-- bcrypt for password hashing
-- JWT for authentication
-- http-status for HTTP codes
+- **Node.js**
+- **Express.js**
+- **TypeScript**
+- **MongoDB** with **Mongoose**
+- **http-status** for response codes
 
 ---
 
@@ -40,7 +39,7 @@ This project supports creating, applying, deleting, and generating reports for c
 
 ```bash
 git clone https://github.com/akash-khan-311/coupons-backend.git
-cd backend
+cd coupons-backend
 npm install
 ```
 
