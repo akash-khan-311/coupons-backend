@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "340b728e-4098-4be0-ba7d-534a8d594476",
+		"name": "Coupons",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39500968"
+	},
+	"item": [
+		{
+			"name": "create coupons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"WELCOME10\",\r\n  \"discountPercentage\": 10,\r\n  \"maxUsage\": 50,\r\n  \"expiryDate\": \"2025-12-31\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/coupons"
+			},
+			"response": []
+		},
+		{
+			"name": "Apply Coupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"WELCOME10\",\r\n  \"discountPercentage\": 10,\r\n  \"maxUsage\": 50,\r\n  \"expiryDate\": \"2025-12-31\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/coupons"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Active Coupons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Akash Khan\",\r\n    \"email\": \"akash@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/coupons"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Coupons Report",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Akash Khan\",\r\n    \"email\": \"akash@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/coupons"
+			},
+			"response": []
+		},
+		{
+			"name": "delete coupon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Akash Khan\",\r\n    \"email\": \"akash@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/api/coupons/WELCOME10"
+			},
+			"response": []
+		}
+	]
+}

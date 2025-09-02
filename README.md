@@ -39,7 +39,7 @@ This project supports creating, applying, deleting, and generating reports for c
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/akash-khan-311/expenses-tracker-backend.git
+git clone https://github.com/akash-khan-311/coupons-backend.git
 cd backend
 npm install
 ```
